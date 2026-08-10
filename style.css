@@ -5,48 +5,44 @@
 }
 
 body {
-	background: linear-gradient(-45deg, #04a5e5, #7287fd, #8839ef, #ea76cb);
-	background-size: 400% 400%;
-	animation: gradient 60s ease-in-out infinite;
-	height: 100vh;
+  font-family: "Rubik", sans-serif;
+}
 
+#hero {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 1rem;
+  min-height: 100svh;
 }
 
-.info {
-  color: white;
-  font-family: sans-serif;
+.primary {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.primary img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 1rem;
+  box-shadow: 1px 1px -1px -1px black;
+}
+
+.primary .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
-  font-size: 2rem;
-  padding: 128px;
-  border-radius: 16px;
-
-  background: linear-gradient(135deg, #ffffff40, #ffffff20);
-  backdrop-filter: 8px;
-  border: 1px solid #80808040;
-  box-shadow: 0 0 16px 0 #cccccc40;
+  gap: 0.5rem;
+  margin: 0 1rem;
 }
 
-.header {
-  font-size: 3rem;
+#hero h1 {
+  font-size: 2.5rem;
 }
 
-@keyframes gradient {
-	0% {
-		background-position: 25% 25%;
-	}
-  25% {
-    background-position: 75% 25%;
-  }
-	50% {
-		background-position: 75% 75%;
-	}
-	75% {
-		background-position: 25% 75%;
-	}
-  100% {
-    background-position: 25% 25%;
-  }
+#hero h2 {
+  font-size: 1.5rem;
 }
