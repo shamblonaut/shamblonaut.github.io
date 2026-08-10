@@ -1,3 +1,7 @@
+:root {
+  --width: min(30rem, 90vw);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -23,14 +27,13 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
-  max-width: 30rem;
+  max-width: var(--width);
 }
 
 .primary img {
   width: 8rem;
   height: 8rem;
   border-radius: 1rem;
-  box-shadow: 1px 1px -1px -1px black;
 }
 
 .primary .info {
@@ -56,12 +59,12 @@ body {
   gap: 1rem;
 }
 
-.links div {
+.links > div {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
-  max-width: 30rem;
+  max-width: var(--width);
 }
 
 .links a {
@@ -84,9 +87,9 @@ body {
 }
 
 .socials a {
-  min-width: 14.5rem;
+  min-width: calc((var(--width) / 2) - 0.5rem);
 }
 
 .resume a {
-  min-width: 30rem;
+  min-width: var(--width);
 }
