@@ -52,30 +52,41 @@ body {
 
 .links {
   display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.links div {
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
   max-width: 30rem;
 }
 
-.link {
+.links a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
   padding: 1rem 0;
-  min-width: 14.5rem;
   border-radius: 0.5rem;
   border: 2px solid #000;
 }
 
-.link svg {
+.links svg {
   width: 1.5rem;
   height: 1.5rem;
 }
 
-.link a {
-  text-align: center;
-  text-decoration: none;
-  color: inherit;
+.socials a {
+  min-width: 14.5rem;
+}
+
+.resume a {
+  min-width: 30rem;
 }
