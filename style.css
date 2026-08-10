@@ -10,8 +10,10 @@ body {
 
 #hero {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
   margin: 1rem;
   min-height: 100svh;
 }
@@ -21,6 +23,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
+  max-width: 30rem;
 }
 
 .primary img {
@@ -45,4 +48,34 @@ body {
 
 #hero h2 {
   font-size: 1.5rem;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 30rem;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  min-width: 14.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid #000;
+}
+
+.link svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.link a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
 }
